@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD575BE92762EA7100925246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BE82762EA7100925246 /* AppDelegate.swift */; };
+		FD575BEB2762EA7100925246 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BEA2762EA7100925246 /* SceneDelegate.swift */; };
+		FD575BED2762EA7100925246 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BEC2762EA7100925246 /* HomeViewController.swift */; };
+		FD575BF02762EA7100925246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD575BEE2762EA7100925246 /* Main.storyboard */; };
+		FD575BF22762EA7300925246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD575BF12762EA7300925246 /* Assets.xcassets */; };
+		FD575BF52762EA7300925246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD575BF32762EA7300925246 /* LaunchScreen.storyboard */; };
+		FD575BFE2762EB0B00925246 /* ViewModelTedTalkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BFD2762EB0B00925246 /* ViewModelTedTalkProtocol.swift */; };
+		FD575C012762EB5B00925246 /* TedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C002762EB5B00925246 /* TedTalk.swift */; };
+		FD575C052762EC8300925246 /* TedTalkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C042762EC8300925246 /* TedTalkManager.swift */; };
+		FD575C072762ECAA00925246 /* ViewModelTedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C062762ECAA00925246 /* ViewModelTedTalk.swift */; };
+		FD575C0A2762EFF000925246 /* TableCustomCellTedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C092762EFF000925246 /* TableCustomCellTedTalk.swift */; };
+		FD575C0C2762F10A00925246 /* DetailTedTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C0B2762F10A00925246 /* DetailTedTalkViewController.swift */; };
+		FD575C0E2762F54500925246 /* tedTalks.json in Resources */ = {isa = PBXBuildFile; fileRef = FD575C0D2762F54500925246 /* tedTalks.json */; };
+		FD575C10276396B400925246 /* TedTalkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C0F276396B400925246 /* TedTalkDisplay.swift */; };
+		FD575C122763977B00925246 /* DisplayManagerTedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C112763977B00925246 /* DisplayManagerTedTalk.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD575BE52762EA7100925246 /* TedTalkMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TedTalkMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD575BE82762EA7100925246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD575BEA2762EA7100925246 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD575BEC2762EA7100925246 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FD575BEF2762EA7100925246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD575BF12762EA7300925246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD575BF42762EA7300925246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD575BF62762EA7300925246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD575BFD2762EB0B00925246 /* ViewModelTedTalkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTedTalkProtocol.swift; sourceTree = "<group>"; };
+		FD575C002762EB5B00925246 /* TedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalk.swift; sourceTree = "<group>"; };
+		FD575C042762EC8300925246 /* TedTalkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkManager.swift; sourceTree = "<group>"; };
+		FD575C062762ECAA00925246 /* ViewModelTedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTedTalk.swift; sourceTree = "<group>"; };
+		FD575C092762EFF000925246 /* TableCustomCellTedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCustomCellTedTalk.swift; sourceTree = "<group>"; };
+		FD575C0B2762F10A00925246 /* DetailTedTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTedTalkViewController.swift; sourceTree = "<group>"; };
+		FD575C0D2762F54500925246 /* tedTalks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tedTalks.json; sourceTree = "<group>"; };
+		FD575C0F276396B400925246 /* TedTalkDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkDisplay.swift; sourceTree = "<group>"; };
+		FD575C112763977B00925246 /* DisplayManagerTedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayManagerTedTalk.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD575BE22762EA7100925246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD575BDC2762EA7100925246 = {
+			isa = PBXGroup;
+			children = (
+				FD575BE72762EA7100925246 /* TedTalkMVVM */,
+				FD575BE62762EA7100925246 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD575BE62762EA7100925246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD575BE52762EA7100925246 /* TedTalkMVVM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD575BE72762EA7100925246 /* TedTalkMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				FD575C082762ECE800925246 /* view */,
+				FD575BFF2762EB4F00925246 /* model */,
+				FD575BFC2762EA9300925246 /* viewModel */,
+				FD575BE82762EA7100925246 /* AppDelegate.swift */,
+				FD575BEA2762EA7100925246 /* SceneDelegate.swift */,
+				FD575BEE2762EA7100925246 /* Main.storyboard */,
+				FD575BF12762EA7300925246 /* Assets.xcassets */,
+				FD575BF32762EA7300925246 /* LaunchScreen.storyboard */,
+				FD575BF62762EA7300925246 /* Info.plist */,
+				FD575C0D2762F54500925246 /* tedTalks.json */,
+				FD575C112763977B00925246 /* DisplayManagerTedTalk.swift */,
+			);
+			path = TedTalkMVVM;
+			sourceTree = "<group>";
+		};
+		FD575BFC2762EA9300925246 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD575BFD2762EB0B00925246 /* ViewModelTedTalkProtocol.swift */,
+				FD575C062762ECAA00925246 /* ViewModelTedTalk.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		FD575BFF2762EB4F00925246 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FD575C002762EB5B00925246 /* TedTalk.swift */,
+				FD575C042762EC8300925246 /* TedTalkManager.swift */,
+				FD575C0F276396B400925246 /* TedTalkDisplay.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FD575C082762ECE800925246 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FD575BEC2762EA7100925246 /* HomeViewController.swift */,
+				FD575C092762EFF000925246 /* TableCustomCellTedTalk.swift */,
+				FD575C0B2762F10A00925246 /* DetailTedTalkViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD575BE42762EA7100925246 /* TedTalkMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD575BF92762EA7300925246 /* Build configuration list for PBXNativeTarget "TedTalkMVVM" */;
+			buildPhases = (
+				FD575BE12762EA7100925246 /* Sources */,
+				FD575BE22762EA7100925246 /* Frameworks */,
+				FD575BE32762EA7100925246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TedTalkMVVM;
+			productName = TedTalkMVVM;
+			productReference = FD575BE52762EA7100925246 /* TedTalkMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD575BDD2762EA7100925246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FD575BE42762EA7100925246 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = FD575BE02762EA7100925246 /* Build configuration list for PBXProject "TedTalkMVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD575BDC2762EA7100925246;
+			productRefGroup = FD575BE62762EA7100925246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD575BE42762EA7100925246 /* TedTalkMVVM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD575BE32762EA7100925246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD575BF52762EA7300925246 /* LaunchScreen.storyboard in Resources */,
+				FD575C0E2762F54500925246 /* tedTalks.json in Resources */,
+				FD575BF22762EA7300925246 /* Assets.xcassets in Resources */,
+				FD575BF02762EA7100925246 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD575BE12762EA7100925246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD575BFE2762EB0B00925246 /* ViewModelTedTalkProtocol.swift in Sources */,
+				FD575BED2762EA7100925246 /* HomeViewController.swift in Sources */,
+				FD575C012762EB5B00925246 /* TedTalk.swift in Sources */,
+				FD575C0A2762EFF000925246 /* TableCustomCellTedTalk.swift in Sources */,
+				FD575C0C2762F10A00925246 /* DetailTedTalkViewController.swift in Sources */,
+				FD575C072762ECAA00925246 /* ViewModelTedTalk.swift in Sources */,
+				FD575C10276396B400925246 /* TedTalkDisplay.swift in Sources */,
+				FD575BE92762EA7100925246 /* AppDelegate.swift in Sources */,
+				FD575C122763977B00925246 /* DisplayManagerTedTalk.swift in Sources */,
+				FD575BEB2762EA7100925246 /* SceneDelegate.swift in Sources */,
+				FD575C052762EC8300925246 /* TedTalkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD575BEE2762EA7100925246 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD575BEF2762EA7100925246 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD575BF32762EA7300925246 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD575BF42762EA7300925246 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD575BF72762EA7300925246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD575BF82762EA7300925246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD575BFA2762EA7300925246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WV4R9KHGF;
+				INFOPLIST_FILE = TedTalkMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = globant.TedTalkMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD575BFB2762EA7300925246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WV4R9KHGF;
+				INFOPLIST_FILE = TedTalkMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = globant.TedTalkMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD575BE02762EA7100925246 /* Build configuration list for PBXProject "TedTalkMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD575BF72762EA7300925246 /* Debug */,
+				FD575BF82762EA7300925246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD575BF92762EA7300925246 /* Build configuration list for PBXNativeTarget "TedTalkMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD575BFA2762EA7300925246 /* Debug */,
+				FD575BFB2762EA7300925246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD575BDD2762EA7100925246 /* Project object */;
+}
