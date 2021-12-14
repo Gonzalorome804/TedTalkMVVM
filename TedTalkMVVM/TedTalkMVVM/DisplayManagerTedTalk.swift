@@ -11,8 +11,11 @@ enum Errors: Error, Equatable {
 }
 class DisplayManagerTedTalk {
     
-    static let shareTedTalkManager: DisplayManagerTedTalk = DisplayManagerTedTalk()
+    static let sharedTedTalkManager: DisplayManagerTedTalk = DisplayManagerTedTalk()
     var tedTalks: [TedTalk] = []
+    
+    
+    private init(){}
     
     func getTalks(filename: String, onCompletion: @escaping (Result<[TedTalkDisplay], Errors>) -> Void) {
         TedTalkManager().parseFromJson(fileName: filename) {
@@ -29,6 +32,14 @@ class DisplayManagerTedTalk {
                 print("there was an error")
             }
         }
+    }
+    
+    func getTedTalkDisplayDetail(tedTalkDisplayDetailIndex: Int) -> TedTalkDisplay {
+        return tedTalks[tedTalkDisplayDetailIndex].ParseDisplay()
+    }
+    
+    func getTedTalkDisplayCount() -> Int {
+        return tedTalks.count
     }
     
     func filterTalk(filter: String, text: String) -> [TedTalkDisplay] {

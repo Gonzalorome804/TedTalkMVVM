@@ -44,7 +44,7 @@ struct TedTalk: Decodable{
             return true
         }
     }
-
+    
     func ParseDisplay() -> TedTalkDisplay{
         return TedTalkDisplay(main_speaker: main_speaker, description: description, name: name, tags: tags, title: title, url: url, views: views)
     }

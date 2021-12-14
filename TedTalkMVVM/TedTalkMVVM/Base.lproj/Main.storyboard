@@ -160,24 +160,55 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KZ-u0-dCZ">
+                                <rect key="frame" x="10" y="818" width="80" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="&lt;previous">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousDetailTedTalk" destination="9py-ST-jfB" eventType="touchUpInside" id="mTf-2V-w8w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nE-D6-rzw">
+                                <rect key="frame" x="358" y="818" width="46" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="next&gt;">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextDetailTedTalk" destination="9py-ST-jfB" eventType="touchUpInside" id="ylT-V8-YCP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qkV-t4-dQW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dIa-PK-j85" firstAttribute="top" secondItem="QFQ-Cs-GHJ" secondAttribute="bottom" constant="5" id="1BN-nQ-6R8"/>
                             <constraint firstItem="MCY-GW-Ux3" firstAttribute="centerX" secondItem="e2P-PZ-YIA" secondAttribute="centerX" id="1KH-1n-sd5"/>
+                            <constraint firstItem="qkV-t4-dQW" firstAttribute="bottom" secondItem="0nE-D6-rzw" secondAttribute="bottom" constant="10" id="24L-q7-ov4"/>
                             <constraint firstItem="lJu-RX-phc" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="10" id="60N-8z-kbY"/>
                             <constraint firstItem="lJu-RX-phc" firstAttribute="top" secondItem="dIa-PK-j85" secondAttribute="bottom" constant="20" id="6mc-cw-eVV"/>
                             <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="FzA-Li-qxj" secondAttribute="trailing" constant="40" id="Hl1-1w-8aF"/>
                             <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="QFQ-Cs-GHJ" secondAttribute="trailing" constant="10" id="KM0-cZ-NFY"/>
                             <constraint firstItem="dIa-PK-j85" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="275" id="Nto-pS-ktc"/>
                             <constraint firstItem="FzA-Li-qxj" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="10" id="RTw-3G-Txr"/>
+                            <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="0nE-D6-rzw" secondAttribute="trailing" constant="10" id="Rbo-9w-MAH"/>
+                            <constraint firstItem="qkV-t4-dQW" firstAttribute="bottom" secondItem="0nE-D6-rzw" secondAttribute="bottom" constant="10" id="SbA-RO-R1L"/>
+                            <constraint firstItem="0KZ-u0-dCZ" firstAttribute="top" secondItem="FzA-Li-qxj" secondAttribute="bottom" constant="301.5" id="V8Y-8C-9Rw"/>
+                            <constraint firstItem="0KZ-u0-dCZ" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="10" id="ZyE-wU-mA1"/>
+                            <constraint firstItem="0KZ-u0-dCZ" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="10" id="be5-XO-uOf"/>
+                            <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="0nE-D6-rzw" secondAttribute="trailing" constant="10" id="cZR-U8-PLf"/>
                             <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="diM-6U-H3U" secondAttribute="trailing" constant="40" id="ebM-h0-wZF"/>
+                            <constraint firstItem="qkV-t4-dQW" firstAttribute="bottom" secondItem="0KZ-u0-dCZ" secondAttribute="bottom" constant="10" id="f86-ja-ryr"/>
                             <constraint firstItem="FzA-Li-qxj" firstAttribute="top" secondItem="diM-6U-H3U" secondAttribute="bottom" constant="20" id="gOb-eB-f8I"/>
+                            <constraint firstItem="qkV-t4-dQW" firstAttribute="bottom" secondItem="0KZ-u0-dCZ" secondAttribute="bottom" constant="10" id="gvi-PU-OA7"/>
+                            <constraint firstItem="0nE-D6-rzw" firstAttribute="top" secondItem="FzA-Li-qxj" secondAttribute="bottom" constant="301.5" id="hT4-yK-4eE"/>
                             <constraint firstItem="diM-6U-H3U" firstAttribute="top" secondItem="lJu-RX-phc" secondAttribute="bottom" constant="20" id="o0e-M3-OoS"/>
                             <constraint firstItem="diM-6U-H3U" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="10" id="p4g-pM-Fjc"/>
                             <constraint firstItem="QFQ-Cs-GHJ" firstAttribute="height" secondItem="e2P-PZ-YIA" secondAttribute="height" multiplier="0.25" id="q0s-KI-FFD"/>
                             <constraint firstItem="QFQ-Cs-GHJ" firstAttribute="leading" secondItem="qkV-t4-dQW" secondAttribute="leading" constant="10" id="qkq-0b-ZrH"/>
+                            <constraint firstItem="0nE-D6-rzw" firstAttribute="leading" secondItem="0KZ-u0-dCZ" secondAttribute="trailing" constant="268" id="qw0-Iu-uKX"/>
                             <constraint firstItem="QFQ-Cs-GHJ" firstAttribute="top" secondItem="MCY-GW-Ux3" secondAttribute="bottom" constant="10" id="ueX-mS-fnM"/>
                             <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="dIa-PK-j85" secondAttribute="trailing" constant="10" id="vOe-i2-Nhx"/>
                             <constraint firstItem="qkV-t4-dQW" firstAttribute="trailing" secondItem="lJu-RX-phc" secondAttribute="trailing" constant="70" id="vWd-wL-aKo"/>
@@ -219,6 +250,9 @@
     </scenes>
     <resources>
         <image name="a485a081-1edd-4240-9df7-5bc2ca582072" width="100" height="100"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

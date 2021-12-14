@@ -22,6 +22,8 @@
 		FD575C0E2762F54500925246 /* tedTalks.json in Resources */ = {isa = PBXBuildFile; fileRef = FD575C0D2762F54500925246 /* tedTalks.json */; };
 		FD575C10276396B400925246 /* TedTalkDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C0F276396B400925246 /* TedTalkDisplay.swift */; };
 		FD575C122763977B00925246 /* DisplayManagerTedTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575C112763977B00925246 /* DisplayManagerTedTalk.swift */; };
+		FDFCFFE22767B38800213831 /* ViewModelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCFFE12767B38800213831 /* ViewModelDetail.swift */; };
+		FDFCFFE42767B4C300213831 /* ViewModelDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFCFFE32767B4C300213831 /* ViewModelDetailProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		FD575C0D2762F54500925246 /* tedTalks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tedTalks.json; sourceTree = "<group>"; };
 		FD575C0F276396B400925246 /* TedTalkDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkDisplay.swift; sourceTree = "<group>"; };
 		FD575C112763977B00925246 /* DisplayManagerTedTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayManagerTedTalk.swift; sourceTree = "<group>"; };
+		FDFCFFE12767B38800213831 /* ViewModelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDetail.swift; sourceTree = "<group>"; };
+		FDFCFFE32767B4C300213831 /* ViewModelDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDetailProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +96,9 @@
 		FD575BFC2762EA9300925246 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FD575BFD2762EB0B00925246 /* ViewModelTedTalkProtocol.swift */,
+				FDFCFFE72768E1FF00213831 /* protocols */,
 				FD575C062762ECAA00925246 /* ViewModelTedTalk.swift */,
+				FDFCFFE12767B38800213831 /* ViewModelDetail.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -116,6 +121,15 @@
 				FD575C0B2762F10A00925246 /* DetailTedTalkViewController.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		FDFCFFE72768E1FF00213831 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FDFCFFE32767B4C300213831 /* ViewModelDetailProtocol.swift */,
+				FD575BFD2762EB0B00925246 /* ViewModelTedTalkProtocol.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +214,8 @@
 				FD575C122763977B00925246 /* DisplayManagerTedTalk.swift in Sources */,
 				FD575BEB2762EA7100925246 /* SceneDelegate.swift in Sources */,
 				FD575C052762EC8300925246 /* TedTalkManager.swift in Sources */,
+				FDFCFFE42767B4C300213831 /* ViewModelDetailProtocol.swift in Sources */,
+				FDFCFFE22767B38800213831 /* ViewModelDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,25 +17,38 @@ class DetailTedTalkViewController: UIViewController{
     @IBOutlet weak var tagDetailLabel: UILabel!
     @IBOutlet weak var webTedTalk: WKWebView!
     
-    var tedTalk: TedTalkDisplay? = nil
-    
-    func setTedTalk(talk: TedTalkDisplay){
-        self.tedTalk = talk
+    @IBAction func previousDetailTedTalk(){
+        viewModel.getPreviousTedTalkDetail()
     }
+    
+    @IBAction func nextDetailTedTalk(){
+        viewModel.getNextTedTalkDetail()
+    }
+    
+    var viewModel: ViewModelProtocolDetail!
+    var index: Int = 0
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        if let displayTedTalk = tedTalk{
-            
-            titleDetailLabel.text = displayTedTalk.title
-            webTedTalk.load(URLRequest(url: URL(string: displayTedTalk.url)!))
-            tagDetailLabel.text = "Tags: \(displayTedTalk.tags.joined(separator: ", "))"
-            let viewString = displayTedTalk.views as NSNumber
-            ofViewDetailLabel.text = "#of views: \(viewString.stringValue)"
-            nameDetailLabel.text = displayTedTalk.name
-            descriptionDetailLabel.text = displayTedTalk.description
-        }
+        viewModel = viewModelDetail(tedTalkManager: DisplayManagerTedTalk.sharedTedTalkManager,
+                                    observerTedTalk: { [unowned self] viewModel in
+                                        self.showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
+                                    })
+        viewModel.indexTedTalkDisplay = index
+        showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
+    }
+    
+    func showTedTalkDetail (talk: TedTalkDisplay)
+    {
+        titleDetailLabel.text = talk.title
+        webTedTalk.load(URLRequest(url: URL(string: talk.url)!))
+        tagDetailLabel.text = "Tags: \(talk.tags.joined(separator: ", "))"
+        let viewString = talk.views as NSNumber
+        ofViewDetailLabel.text = "#of views: \(viewString.stringValue)"
+        nameDetailLabel.text = talk.name
+        descriptionDetailLabel.text = talk.description
     }
 }
+
 
