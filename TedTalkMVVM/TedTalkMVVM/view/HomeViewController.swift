@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pickerTedTalk: UIPickerView!
     @IBOutlet weak var searchTedTalk: UISearchBar!
     
+    
     private var viewModel: ViewModelTedTalkProtocol!
     private var tedTalksDisplay: [TedTalkDisplay] = []
     private var pickerSelectedRow = ""

@@ -16,6 +16,9 @@ class DetailTedTalkViewController: UIViewController{
     @IBOutlet weak var descriptionDetailLabel: UILabel!
     @IBOutlet weak var tagDetailLabel: UILabel!
     @IBOutlet weak var webTedTalk: WKWebView!
+    @IBOutlet weak var previousTedTalkButton: UIButton!
+    @IBOutlet weak var nextTedTalkButton: UIButton!
+    
     
     @IBAction func previousDetailTedTalk(){
         viewModel.getPreviousTedTalkDetail()
@@ -34,7 +37,10 @@ class DetailTedTalkViewController: UIViewController{
         viewModel = viewModelDetail(tedTalkManager: DisplayManagerTedTalk.sharedTedTalkManager,
                                     observerTedTalk: { [unowned self] viewModel in
                                         self.showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
-                                    })
+                                    },observerNextTedTalkButton: { [unowned self] viewModel in
+                                        self.buttonNextDisable()}, observerPreviousTedTalkButton: { [unowned self] viewModel in
+                                            self.buttonPreviousDisable()}, observerTedTalkButtons: { [unowned self] viewModel in
+                                                self.buttonsEnables()})
         viewModel.indexTedTalkDisplay = index
         showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
     }
@@ -48,6 +54,17 @@ class DetailTedTalkViewController: UIViewController{
         ofViewDetailLabel.text = "#of views: \(viewString.stringValue)"
         nameDetailLabel.text = talk.name
         descriptionDetailLabel.text = talk.description
+    }
+    
+    func buttonNextDisable(){
+        nextTedTalkButton.isEnabled = false
+    }
+    func buttonPreviousDisable(){
+        previousTedTalkButton.isEnabled = false
+    }
+    func buttonsEnables(){
+        nextTedTalkButton.isEnabled = true
+        previousTedTalkButton.isEnabled = true
     }
 }
 

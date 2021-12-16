@@ -219,7 +219,9 @@
                     <connections>
                         <outlet property="descriptionDetailLabel" destination="diM-6U-H3U" id="SBL-Nc-1uc"/>
                         <outlet property="nameDetailLabel" destination="lJu-RX-phc" id="m4Y-fr-YWt"/>
+                        <outlet property="nextTedTalkButton" destination="0nE-D6-rzw" id="J0l-Qb-yQY"/>
                         <outlet property="ofViewDetailLabel" destination="dIa-PK-j85" id="MaH-Cx-WsW"/>
+                        <outlet property="previousTedTalkButton" destination="0KZ-u0-dCZ" id="gBi-tD-ymD"/>
                         <outlet property="tagDetailLabel" destination="FzA-Li-qxj" id="XcZ-7u-fJ3"/>
                         <outlet property="titleDetailLabel" destination="MCY-GW-Ux3" id="5r8-VE-0uM"/>
                         <outlet property="webTedTalk" destination="QFQ-Cs-GHJ" id="fjg-px-44E"/>
