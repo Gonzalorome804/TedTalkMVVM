@@ -37,10 +37,8 @@ class DetailTedTalkViewController: UIViewController{
         viewModel = viewModelDetail(tedTalkManager: DisplayManagerTedTalk.sharedTedTalkManager,
                                     observerTedTalk: { [unowned self] viewModel in
                                         self.showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
-                                    },observerNextTedTalkButton: { [unowned self] viewModel in
-                                        self.buttonNextDisable()}, observerPreviousTedTalkButton: { [unowned self] viewModel in
-                                            self.buttonPreviousDisable()}, observerTedTalkButtons: { [unowned self] viewModel in
-                                                self.buttonsEnables()})
+                                    }, observerTedTalkButtons: { [unowned self] viewModelPrevious, viewModelNext  in
+                                        self.buttonsEnables(valueButtonPrevious: viewModelPrevious, valueButtonNext: viewModelNext)})
         viewModel.indexTedTalkDisplay = index
         showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
     }
@@ -56,15 +54,9 @@ class DetailTedTalkViewController: UIViewController{
         descriptionDetailLabel.text = talk.description
     }
     
-    func buttonNextDisable(){
-        nextTedTalkButton.isEnabled = false
-    }
-    func buttonPreviousDisable(){
-        previousTedTalkButton.isEnabled = false
-    }
-    func buttonsEnables(){
-        nextTedTalkButton.isEnabled = true
-        previousTedTalkButton.isEnabled = true
+    func buttonsEnables(valueButtonPrevious: Bool, valueButtonNext: Bool){
+        nextTedTalkButton.isEnabled = valueButtonNext
+        previousTedTalkButton.isEnabled = valueButtonPrevious
     }
 }
 

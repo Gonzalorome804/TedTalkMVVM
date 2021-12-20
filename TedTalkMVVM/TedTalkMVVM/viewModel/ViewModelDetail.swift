@@ -11,17 +11,13 @@ class viewModelDetail: ViewModelProtocolDetail {
     
     internal var indexTedTalkDisplay: Int = 0
     internal var observerTedTalkDetailDisplay: ((ViewModelProtocolDetail) -> ())
-    internal var observerNextTedTalk: ((ViewModelProtocolDetail) -> ())
-    internal var observerPreviousTedTalk: ((ViewModelProtocolDetail) -> ())
     var tedTalkManager: DisplayManagerTedTalk
-    internal var observerIntermediateTedTalk: ((ViewModelProtocolDetail) -> ())
+    internal var observerPreviousAndNextTedTalkDetail: ((Bool, Bool) -> ())
     
-    init(tedTalkManager: DisplayManagerTedTalk, observerTedTalk: @escaping (ViewModelProtocolDetail) -> (), observerNextTedTalkButton: @escaping (ViewModelProtocolDetail) -> (), observerPreviousTedTalkButton: @escaping (ViewModelProtocolDetail) -> (),observerTedTalkButtons: @escaping (ViewModelProtocolDetail) -> ()) {
+    init(tedTalkManager: DisplayManagerTedTalk, observerTedTalk: @escaping (ViewModelProtocolDetail) -> (),observerTedTalkButtons: @escaping (Bool, Bool) -> ()) {
         self.tedTalkManager = tedTalkManager
         self.observerTedTalkDetailDisplay = observerTedTalk
-        self.observerNextTedTalk = observerNextTedTalkButton
-        self.observerPreviousTedTalk = observerPreviousTedTalkButton
-        self.observerIntermediateTedTalk = observerTedTalkButtons
+        self.observerPreviousAndNextTedTalkDetail = observerTedTalkButtons
     }
     
     func getPreviousTedTalkDetail() {
@@ -41,13 +37,12 @@ class viewModelDetail: ViewModelProtocolDetail {
     
     func getTedTalkDetailsDisplay() -> TedTalkDisplay {
         if indexTedTalkDisplay == tedTalkManager.getTedTalkDisplayCount(){
-            observerNextTedTalk(self)
+            observerPreviousAndNextTedTalkDetail(true, false)
         }
         if indexTedTalkDisplay == 0{
-            observerPreviousTedTalk(self)
-        }
+            observerPreviousAndNextTedTalkDetail(false,true)        }
         else {
-            observerIntermediateTedTalk(self)
+            observerPreviousAndNextTedTalkDetail(true,true)
         }
         return tedTalkManager.getTedTalkDisplayDetail(tedTalkDisplayDetailIndex: indexTedTalkDisplay)
     }
