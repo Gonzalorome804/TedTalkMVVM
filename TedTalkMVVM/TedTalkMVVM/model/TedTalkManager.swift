@@ -7,6 +7,7 @@
 import Foundation
 
 enum ParseErrors: Error {
+    case wrongURL
     case fileNotFound
     case invalidData
     case decodingDataIsCorrupted

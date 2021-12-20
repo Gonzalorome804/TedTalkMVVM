@@ -6,6 +6,8 @@
 //
 
 import Foundation
+
+
 enum Errors: Error, Equatable {
     case error
 }

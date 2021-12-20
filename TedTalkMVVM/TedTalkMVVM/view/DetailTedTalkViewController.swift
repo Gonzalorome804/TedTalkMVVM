@@ -37,8 +37,8 @@ class DetailTedTalkViewController: UIViewController{
         viewModel = viewModelDetail(tedTalkManager: DisplayManagerTedTalk.sharedTedTalkManager,
                                     observerTedTalk: { [unowned self] viewModel in
                                         self.showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
-                                    }, observerTedTalkButtons: { [unowned self] viewModelPrevious, viewModelNext  in
-                                        self.buttonsEnables(valueButtonPrevious: viewModelPrevious, valueButtonNext: viewModelNext)})
+                                    }, observerTedTalkButtons: { [unowned self] previousButtonIsActive, nextButtonIsActive  in
+                                        self.buttonsEnables(valueButtonPrevious: previousButtonIsActive, valueButtonNext: nextButtonIsActive)})
         viewModel.indexTedTalkDisplay = index
         showTedTalkDetail(talk: viewModel.getTedTalkDetailsDisplay())
     }
