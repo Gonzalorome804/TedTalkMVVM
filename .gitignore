@@ -1,7 +1,5 @@
 
-*.swift
-*.xcscheme
-*.lock
+
 gitignore
 TedTalkMVVM/Podfile
 TedTalkMVVM/Pods/Alamofire/LICENSE
