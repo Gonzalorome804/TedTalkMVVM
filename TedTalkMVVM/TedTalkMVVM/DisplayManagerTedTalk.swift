@@ -22,7 +22,7 @@ class DisplayManagerTedTalk {
             result in
             switch result {
             case .success(let talks):
-                TedTalkDataBaseManager.sharedInstance.createTedTalks(talks)
+                TedTalkBaseDataManager.sharedInstance.createTedTalks(talks)
                 onCompletion(.success(talks.map({ (tedtalk) -> TedTalkDisplay
                     in tedtalk.ParseDisplay()
                 })))
@@ -35,7 +35,7 @@ class DisplayManagerTedTalk {
     
     func getTedTalkDisplayDetail(tedTalkDisplayDetailIndex: Int) -> TedTalkDisplay {
         var tedTalkDisplay: TedTalkDisplay = TedTalkDisplay(main_speaker: "", name: "", descrip: "", tags: [""], title: "", url: "", views: 0)
-        TedTalkDataBaseManager.sharedInstance.readTedTalks(){ talks in
+        TedTalkBaseDataManager.sharedInstance.readTedTalks(){ talks in
             tedTalkDisplay = talks[tedTalkDisplayDetailIndex].ParseDisplay()
         }
         return tedTalkDisplay
@@ -43,7 +43,7 @@ class DisplayManagerTedTalk {
     
     func getTedTalkDisplayCount() -> Int {
         var talkCount: Int = 0
-        TedTalkDataBaseManager.sharedInstance.readTedTalks(){ talks in
+        TedTalkBaseDataManager.sharedInstance.readTedTalks(){ talks in
             talkCount = talks.count
         }
         return talkCount
@@ -51,7 +51,7 @@ class DisplayManagerTedTalk {
     
     func filterTalk(filter: String, text: String) -> [TedTalkDisplay] {
         var filteredTalk: [TedTalkDisplay] = []
-        TedTalkDataBaseManager.sharedInstance.readTedTalks(){ talks in talks.forEach({
+        TedTalkBaseDataManager.sharedInstance.readTedTalks(){ talks in talks.forEach({
             (talk) in
             if talk.isFiltered(filter, input: text){
                 filteredTalk.append(talk.ParseDisplay())

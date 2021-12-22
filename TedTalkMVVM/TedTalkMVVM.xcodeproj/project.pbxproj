@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		530C453ED73C15237E1EA9B2 /* Pods_TedTalkMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F400EDCE827449D2E7BACA /* Pods_TedTalkMVVM.framework */; };
-		FD06C37927711DDE00D59DCA /* TedTalkDataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06C37827711DDE00D59DCA /* TedTalkDataBaseManager.swift */; };
+		FD4489E32773659A0019DED1 /* TedTalkBaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4489E22773659A0019DED1 /* TedTalkBaseDataManager.swift */; };
 		FD575BE92762EA7100925246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BE82762EA7100925246 /* AppDelegate.swift */; };
 		FD575BEB2762EA7100925246 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BEA2762EA7100925246 /* SceneDelegate.swift */; };
 		FD575BED2762EA7100925246 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD575BEC2762EA7100925246 /* HomeViewController.swift */; };
@@ -32,7 +32,7 @@
 		7DDAC23792F388408BAA7ED2 /* Pods-TedTalkMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TedTalkMVVM.debug.xcconfig"; path = "Target Support Files/Pods-TedTalkMVVM/Pods-TedTalkMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		B9F400EDCE827449D2E7BACA /* Pods_TedTalkMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TedTalkMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79ABB5B5559BA7EA1F41D98 /* Pods-TedTalkMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TedTalkMVVM.release.xcconfig"; path = "Target Support Files/Pods-TedTalkMVVM/Pods-TedTalkMVVM.release.xcconfig"; sourceTree = "<group>"; };
-		FD06C37827711DDE00D59DCA /* TedTalkDataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TedTalkDataBaseManager.swift; path = ../../../../../TedTalkDataBaseManager.swift; sourceTree = "<group>"; };
+		FD4489E22773659A0019DED1 /* TedTalkBaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedTalkBaseDataManager.swift; sourceTree = "<group>"; };
 		FD575BE52762EA7100925246 /* TedTalkMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TedTalkMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD575BE82762EA7100925246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD575BEA2762EA7100925246 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				FD575C002762EB5B00925246 /* TedTalk.swift */,
 				FD575C042762EC8300925246 /* TedTalkManager.swift */,
 				FD575C0F276396B400925246 /* TedTalkDisplay.swift */,
-				FD06C37827711DDE00D59DCA /* TedTalkDataBaseManager.swift */,
+				FD4489E22773659A0019DED1 /* TedTalkBaseDataManager.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -274,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD06C37927711DDE00D59DCA /* TedTalkDataBaseManager.swift in Sources */,
 				FD575BFE2762EB0B00925246 /* ViewModelTedTalkProtocol.swift in Sources */,
 				FD575BED2762EA7100925246 /* HomeViewController.swift in Sources */,
 				FD575C012762EB5B00925246 /* TedTalk.swift in Sources */,
@@ -283,6 +282,7 @@
 				FD575C072762ECAA00925246 /* ViewModelTedTalk.swift in Sources */,
 				FD575C10276396B400925246 /* TedTalkDisplay.swift in Sources */,
 				FD575BE92762EA7100925246 /* AppDelegate.swift in Sources */,
+				FD4489E32773659A0019DED1 /* TedTalkBaseDataManager.swift in Sources */,
 				FD575C122763977B00925246 /* DisplayManagerTedTalk.swift in Sources */,
 				FD575BEB2762EA7100925246 /* SceneDelegate.swift in Sources */,
 				FD575C052762EC8300925246 /* TedTalkManager.swift in Sources */,
