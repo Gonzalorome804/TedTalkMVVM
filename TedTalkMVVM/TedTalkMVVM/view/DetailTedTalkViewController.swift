@@ -51,7 +51,7 @@ class DetailTedTalkViewController: UIViewController{
         let viewString = talk.views as NSNumber
         ofViewDetailLabel.text = "#of views: \(viewString.stringValue)"
         nameDetailLabel.text = talk.name
-        descriptionDetailLabel.text = talk.description
+        descriptionDetailLabel.text = talk.descrip
     }
     
     func buttonsEnables(valueButtonPrevious: Bool, valueButtonNext: Bool){
