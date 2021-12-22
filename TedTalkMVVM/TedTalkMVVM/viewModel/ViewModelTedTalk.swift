@@ -29,8 +29,8 @@ class ViewModelTedTalk: ViewModelTedTalkProtocol{
         
     }
     
-    func getTalks(file: String = "tedTalks") {
-        displayManager.getTalks(filename: file){
+    func getTalks() {
+        displayManager.getTalks(){
             result in
             switch result {
             case .success(let talks):

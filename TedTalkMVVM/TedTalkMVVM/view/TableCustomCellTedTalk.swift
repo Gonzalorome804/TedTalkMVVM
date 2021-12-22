@@ -14,7 +14,7 @@ class TableCustomCellTedTalk : UITableViewCell {
     
     func configureCell(_ talk: TedTalkDisplay){
         mainSpeakerCellLabel.text = "Main Speaker: \(talk.main_speaker)"
-        descriptionCellLabel.text = talk.description
+        descriptionCellLabel.text = talk.descrip
     }
 }
 

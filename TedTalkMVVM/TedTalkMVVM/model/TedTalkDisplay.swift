@@ -9,8 +9,8 @@ import Foundation
 
 struct TedTalkDisplay {
     var main_speaker: String
-    var description: String
     var name: String
+    var descrip: String
     var tags: [String]
     var title: String
     var url: String
